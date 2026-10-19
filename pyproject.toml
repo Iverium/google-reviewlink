@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-reviewlink"
+version = "1.0.0"
+description = "Turn any Google Maps link into a direct Google review link, no API key"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "Iverium Software"}]
+keywords = ["google", "reviews", "google-maps", "place-id", "local-seo"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Natural Language :: Dutch",
+]
+
+[project.urls]
+Homepage = "https://www.iverium.nl/google-reviewlink-maken"
+Source = "https://github.com/Iverium/google-reviewlink"
+
+[project.scripts]
+google-reviewlink = "google_reviewlink.__main__:main"
+
+[tool.setuptools]
+packages = ["google_reviewlink"]
